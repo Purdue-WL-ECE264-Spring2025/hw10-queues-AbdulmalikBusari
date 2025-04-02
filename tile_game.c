@@ -250,3 +250,33 @@ void move_right(struct game_state *state) {
 
 //   return ret;
 // }
+
+// Function to check if the puzzle is solved
+bool is_solved(struct game_state state) {
+  uint8_t solved[4][4] = {
+      {1, 2, 3, 4},
+      {5, 6, 7, 8},
+      {9, 10, 11, 12},
+      {13, 14, 15, 0}
+  };
+
+  // Compare the tiles with the solved state
+  for (int row = 0; row < 4; row++) {
+      for (int col = 0; col < 4; col++) {
+          if (state.tiles[row][col] != solved[row][col]) {
+              return false;
+          }
+      }
+  }
+  return true;
+}
+
+// Function to generate the next valid states from the current game state
+int generate_next_states(struct game_state current, struct game_state next_states[4]) {
+  int num_next = 0;
+
+  // Add logic to generate the next states based on valid moves (up, down, left, right)
+  // This might involve swapping the empty tile with adjacent tiles
+
+  return num_next;
+}

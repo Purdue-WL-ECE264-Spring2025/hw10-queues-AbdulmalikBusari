@@ -4,8 +4,8 @@
 
 
 // Function prototypes (ensure they're implemented somewhere)
-bool is_solved(struct game_state state);
-int generate_next_states(struct game_state current, struct game_state next_states[4]);
+// bool is_solved(struct game_state state);
+// int generate_next_states(struct game_state current, struct game_state next_states[4]);
 
 // Enqueue a game state into the queue
 void enqueue(struct queue *q, struct game_state state) 
