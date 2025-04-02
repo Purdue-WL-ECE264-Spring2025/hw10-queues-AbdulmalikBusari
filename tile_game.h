@@ -17,7 +17,5 @@ void move_down(struct game_state *state);
 void move_left(struct game_state *state);
 void move_right(struct game_state *state);
 
-// bool is_solved(struct game_state state);
-// int generate_next_states(struct game_state current, struct game_state next_states[4]);
 
 #endif // TILE_GAME_H_
